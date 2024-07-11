@@ -1,9 +1,9 @@
 window.initMap = initMap;
 
 let current = [
-    {distance: 25000.0, angle: 45.0},
-    {distance: 0.0, angle: 0.0},
-    {distance: 0.0, angle: 0.0}
+    {distance: 205500.0, angle: 230.0},
+    {distance: 190000.0, angle: 195.0},
+    {distance: 51370.0, angle: 60.0}
 ]
 
 function initMap() {
@@ -16,37 +16,10 @@ function initMap() {
 
     drawProvinces(map);
 
-    new google.maps.Circle({
-        strokeColor: "#0000FF",
-        strokeOpacity: 0.8,
-        strokeWeight: 4,
-        fillColor: "#FF0000",
-        fillOpacity: 0.20,
+    new google.maps.Marker({
+        position: {lat: 51.2642158, lng: 5.9259185},
         map,
-        center: { lat: 52.03634, lng: 4.32501 },
-        radius: 400
-    });
-
-    new google.maps.Circle({
-        strokeColor: "#0000FF",
-        strokeOpacity: 0.8,
-        strokeWeight: 4,
-        fillColor: "#FF0000",
-        fillOpacity: 0.20,
-        map,
-        center: { lat: 50.86531663582157, lng: 5.837290975877143 },
-        radius: 400
-    });
-
-    new google.maps.Circle({
-        strokeColor: "#0000FF",
-        strokeOpacity: 0.8,
-        strokeWeight: 4,
-        fillColor: "#FF0000",
-        fillOpacity: 0.20,
-        map,
-        center: { lat: 53.05692008417141, lng: 5.404365924754707 },
-        radius: 400
+        label: "Roggel"
     });
 
 
