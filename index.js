@@ -16,6 +16,40 @@ function initMap() {
 
     drawProvinces(map);
 
+    new google.maps.Circle({
+        strokeColor: "#0000FF",
+        strokeOpacity: 0.8,
+        strokeWeight: 4,
+        fillColor: "#FF0000",
+        fillOpacity: 0.20,
+        map,
+        center: { lat: 52.03634, lng: 4.32501 },
+        radius: 400
+    });
+
+    new google.maps.Circle({
+        strokeColor: "#0000FF",
+        strokeOpacity: 0.8,
+        strokeWeight: 4,
+        fillColor: "#FF0000",
+        fillOpacity: 0.20,
+        map,
+        center: { lat: 50.86531663582157, lng: 5.837290975877143 },
+        radius: 400
+    });
+
+    new google.maps.Circle({
+        strokeColor: "#0000FF",
+        strokeOpacity: 0.8,
+        strokeWeight: 4,
+        fillColor: "#FF0000",
+        fillOpacity: 0.20,
+        map,
+        center: { lat: 53.05692008417141, lng: 5.404365924754707 },
+        radius: 400
+    });
+
+
     const flightPlanCoordinates = createPath(current);
     const flightPath = new google.maps.Polyline({
         path: flightPlanCoordinates,
