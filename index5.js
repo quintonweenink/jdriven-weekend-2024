@@ -2,8 +2,8 @@ window.initMap = initMap;
 
 let current = [
     {distance: 205500.0, angle: 230.0},
-    {distance: 190000.0, angle: 195.0},
-    {distance: 51370.0, angle: 60.0}
+    {distance: 186000.0, angle: 195.0},
+    {distance: 51370.0, angle: 55.98}
 ]
 
 function initMap() {
