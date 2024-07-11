@@ -22,6 +22,18 @@ function initMap() {
         label: "Roggel"
     });
 
+    new google.maps.Circle({
+        strokeColor: "#0000FF",
+        strokeOpacity: 0.8,
+        strokeWeight: 4,
+        fillColor: "#FF0000",
+        fillOpacity: 0.20,
+        map,
+        center: { lat: 51.32154209682461, lng: 6.001193432533257 },
+        radius: 400
+    });
+
+
 
     const flightPlanCoordinates = createPath(current);
     const flightPath = new google.maps.Polyline({
